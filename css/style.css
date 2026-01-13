@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+.home {
+  padding: 40px;
+}
+
+.hq {
+  padding: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.hq-list {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.hq-item {
+  text-align: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 40px;
+  border-top: 1px solid #ccc;
+}
+
+.message-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+form {
+  flex: 1;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.radio {
+  margin-top: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 8px;
+}
+
+.result {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 15px;
+}
+
+footer {
+  text-align: right;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hq-list,
+  .message-wrapper {
+    flex-direction: column;
+  }
+}
